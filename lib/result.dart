@@ -31,11 +31,10 @@ class Result extends StatelessWidget {
             style: const TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          FlatButton(
-            child: Text('Restart Quiz!'),
-            onPressed: restartHandler,
-            textColor: Colors.blue,
-          )
+          TextButton(
+              child: Text('Restart Quiz!'),
+              onPressed: restartHandler,
+              style: TextButton.styleFrom(primary: Colors.blue))
         ],
       ),
     );
